@@ -1,0 +1,11 @@
+{
+  "input_rows": 20,
+  "cleaned_rows": 20,
+  "duplicate_rows_removed": 0,
+  "missing_values_after_cleaning": 0,
+  "duplicate_rows_after_cleaning": 0,
+  "invalid_quantity_rows": 0,
+  "net_sales_total": 273500.0,
+  "date_range_start": "2026-01-05",
+  "date_range_end": "2026-03-30"
+}

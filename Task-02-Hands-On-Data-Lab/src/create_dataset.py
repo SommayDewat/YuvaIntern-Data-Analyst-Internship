@@ -1,0 +1,43 @@
+﻿import pandas as pd
+from pathlib import Path
+
+base = Path("Task-02-Hands-On-Data-Lab")
+data_dir = base / "data"
+data_dir.mkdir(parents=True, exist_ok=True)
+
+rows = [
+    [1001, "2026-01-05", "North", "Electronics", "Laptop", 1, 55000, 500],
+    [1002, "2026-01-07", "South", "Clothing", "Jacket", 2, 2500, 200],
+    [1003, "2026-01-09", "West", "Home", "Lamp", 3, 1200, 0],
+    [1004, "2026-01-12", "East", "Electronics", "Headphones", 2, 3500, 300],
+    [1005, "2026-01-15", "North", "Clothing", "Shoes", 1, 4000, 0],
+    [1006, "2026-01-18", "South", "Home", "Chair", 2, 4500, 500],
+    [1007, "2026-02-02", "West", "Electronics", "Monitor", 1, 18000, 1000],
+    [1008, "2026-02-06", "East", "Clothing", "T-shirt", 4, 800, 100],
+    [1009, "2026-02-10", "North", "Home", "Table", 1, 7500, 500],
+    [1010, "2026-02-14", "South", "Electronics", "Keyboard", 2, 1800, 0],
+    [1011, "2026-02-19", "West", "Clothing", "Jeans", 2, 2200, 200],
+    [1012, "2026-02-23", "East", "Home", "Bookshelf", 1, 6500, 300],
+    [1013, "2026-03-03", "North", "Electronics", "Tablet", 2, 22000, 1000],
+    [1014, "2026-03-08", "South", "Clothing", "Shoes", 3, 4000, 500],
+    [1015, "2026-03-11", "West", "Home", "Desk", 1, 9000, 0],
+    [1016, "2026-03-15", "East", "Electronics", "Mouse", 5, 700, 100],
+    [1017, "2026-03-19", "North", "Clothing", "Jacket", 1, 2500, 0],
+    [1018, "2026-03-25", "South", "Home", "Sofa", 1, 28000, 2000],
+    [1019, "2026-03-28", "West", "Electronics", "Laptop", 1, 55000, 2500],
+    [1020, "2026-03-30", "East", "Clothing", "T-shirt", 3, 800, 0],
+]
+
+columns = [
+    "order_id", "order_date", "region", "category",
+    "product", "quantity", "unit_price", "discount"
+]
+
+df = pd.DataFrame(rows, columns=columns)
+df.to_csv(data_dir / "retail_sales.csv", index=False)
+
+print("Dataset created successfully.")
+print("File:", data_dir / "retail_sales.csv")
+print("Rows:", len(df))
+print("Columns:", len(df.columns))
+print(df.head())
