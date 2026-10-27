@@ -1,0 +1,35 @@
+DATASET INSPECTION REPORT
+========================================
+Rows: 244
+Columns: 7
+
+Data types:
+total_bill     float64
+tip            float64
+sex           category
+smoker        category
+day           category
+time          category
+size             int64
+
+Missing values:
+total_bill    0
+tip           0
+sex           0
+smoker        0
+day           0
+time          0
+size          0
+
+Duplicate rows: 1
+
+Numerical summary:
+       total_bill     tip    size
+count      244.00  244.00  244.00
+mean        19.79    3.00    2.57
+std          8.90    1.38    0.95
+min          3.07    1.00    1.00
+25%         13.35    2.00    2.00
+50%         17.80    2.90    2.00
+75%         24.13    3.56    3.00
+max         50.81   10.00    6.00

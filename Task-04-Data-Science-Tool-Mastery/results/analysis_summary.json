@@ -1,0 +1,22 @@
+{
+    "rows_after_cleaning": 243,
+    "columns_after_cleaning": 7,
+    "duplicates_removed": 1,
+    "rows_removed_for_missing_numeric_values": 0,
+    "invalid_numeric_records_removed": 0,
+    "total_bill_mean": 19.81,
+    "total_bill_median": 17.81,
+    "total_bill_std": 8.89,
+    "tip_mean": 3.0,
+    "tip_median": 2.92,
+    "tip_to_bill_ratio_percent": 15.15,
+    "missing_values_in_original_data": {
+        "total_bill": 0,
+        "tip": 0,
+        "sex": 0,
+        "smoker": 0,
+        "day": 0,
+        "time": 0,
+        "size": 0
+    }
+}
