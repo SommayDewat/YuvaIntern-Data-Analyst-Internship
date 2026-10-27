@@ -1,0 +1,11 @@
+This project analyses the Seoul Bike Sharing Demand dataset from the UCI Machine Learning Repository for the YuvaIntern Data Analyst Internship, Task 3.
+
+The goal was to inspect the dataset, assess quality, explore hourly and seasonal demand, analyse numerical relationships, and communicate insights using Python, Pandas, NumPy, Matplotlib, and Jupyter Notebook. The dataset contains 8,760 hourly observations and 14 source attributes, including rental count, date, hour, temperature, humidity, wind speed, visibility, dew-point temperature, solar radiation, rainfall, snowfall, season, holiday status, and system functioning status.
+
+Data quality checks covered missing values, exact duplicate rows, duplicate date-hour keys, data types, descriptive statistics, and domain validity. The cleaned dataset retained all 8,760 records. No missing values, exact duplicate rows, or duplicate date-hour keys were found.
+
+The analysis identified 6,172,314 total rentals and average hourly demand of approximately 704.6 rentals. Average demand was highest at 18:00, reaching approximately 1,502.9 rentals per hour. Seasonal analysis showed summer had the highest average demand at approximately 1,034.1 rentals per hour, while winter had the lowest at approximately 225.5. Weekday average demand was approximately 719.5 rentals per hour, compared with 667.3 on weekends. Temperature had a positive correlation with rental demand; this relationship is an association and does not establish causation.
+
+The submission includes a Jupyter Notebook, a Word report, cleaned data, quality checks, summary tables, and visualisations. Potential outliers are flagged for review rather than automatically removed. Dataset source: UCI Machine Learning Repository, Seoul Bike Sharing Demand. Source attribution and CC BY 4.0 licensing information are acknowledged.
+
+GitHub repository: https://github.com/SommayDewat/YuvaIntern-Data-Analyst-Internship

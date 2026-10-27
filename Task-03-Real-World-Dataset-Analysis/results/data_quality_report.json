@@ -1,0 +1,35 @@
+{
+  "source_file": "SeoulBikeData.csv",
+  "source_rows": 8760,
+  "source_columns": 14,
+  "missing_values_before_cleaning": 0,
+  "exact_duplicate_rows_before_cleaning": 0,
+  "duplicate_date_hour_keys": 0,
+  "domain_validation_issues": {
+    "invalid_date": 0,
+    "negative_rentals": 0,
+    "hour_out_of_range": 0,
+    "humidity_out_of_range": 0,
+    "negative_wind_speed": 0,
+    "negative_rainfall": 0,
+    "negative_snowfall": 0,
+    "unexpected_season": 0,
+    "unexpected_holiday": 0,
+    "unexpected_functioning_day": 0
+  },
+  "rental_count_iqr_outlier_fences": {
+    "lower": -1120.38,
+    "upper": 2376.62,
+    "flagged_rows": 158,
+    "action": "Flagged for investigation; not removed automatically"
+  },
+  "cleaned_rows": 8760,
+  "missing_values_after_processing": 0,
+  "date_min": "2017-12-01",
+  "date_max": "2018-11-30",
+  "notes": [
+    "Original source CSV was not modified.",
+    "Dates parsed using day/month/year format.",
+    "Outliers were flagged, not automatically removed."
+  ]
+}
