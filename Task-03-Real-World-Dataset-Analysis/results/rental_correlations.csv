@@ -1,4 +1,4 @@
-,pearson_correlation_with_rentals
+variable,pearson_correlation
 TemperatureC,0.5385581530139775
 Hour,0.41025729132248523
 Dew_point_temperatureC,0.3797881212449714
